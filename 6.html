@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>CSS flex</title>
+        <style>
+            .container 
+            {
+                width: 600px;
+                height: 600px;
+                display: flex;
+            }
+
+            .left 
+            {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 400px;
+            }
+
+            .right 
+            {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 200px;
+            }
+
+            .large 
+            {
+                width: 400px;
+                height: 400px;
+            }
+
+            .small 
+            {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="photo large">
+                <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="photo small">
+                <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="photo small">
+            </div>
+            <div class="right">
+                <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="photo small">
+                <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="photo small">
+                <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="photo small">
+            </div>
+          </div>
+    </body>
+</html>

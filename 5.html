@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>CSS grid</title>
+        <style>
+            .alb 
+            {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(5, 10vw);
+                grid-gap: 10px;
+            }
+            .alb_img 
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block; 
+            }
+            .img_1
+            {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            .img_2
+            {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            .img_3
+            {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            .img_4
+            {
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .img_5
+            {
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            .img_6
+            {
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
+            .img_7
+            {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "alb">
+            <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="alb_img img_1">
+            <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="alb_img img_2">
+            <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="alb_img img_3">
+            <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="alb_img img_4">
+            <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="alb_img img_5">
+            <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="alb_img img_6">
+            <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="alb_img img_7">
+        </div>
+    </body>
+</html>
